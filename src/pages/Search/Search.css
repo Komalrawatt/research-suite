@@ -1,0 +1,143 @@
+.search-container {
+  background: var(--bg-card);
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  margin-bottom: 40px;
+  box-shadow: var(--shadow-md);
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.search-input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 1.2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding-left: 48px;
+  font-size: 1.1rem;
+  height: 52px;
+  border-radius: var(--radius-md);
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.paper-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.paper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.paper-meta {
+  display: flex;
+  gap: 8px;
+}
+
+.paper-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.paper-authors {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--accent-light);
+}
+
+.paper-journal {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.paper-abstract {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.paper-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.paper-stats {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.paper-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.4rem;
+  display: flex;
+  transition: var(--transition);
+}
+
+.btn-icon:hover { color: var(--accent); }
+.btn-icon.active { color: var(--accent); }
+
+.loading-state {
+  text-align: center;
+  padding: 60px;
+  color: var(--text-secondary);
+}
+
+.spin { animation: spin 1s linear infinite; }
+
+@media (max-width: 768px) {
+  .search-box { flex-direction: column; }
+  .search-input { height: 48px; }
+  .filter-bar { gap: 10px; }
+}
